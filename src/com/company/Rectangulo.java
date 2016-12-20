@@ -52,11 +52,19 @@ public class Rectangulo {
         return (base*2)+(altura*2);
     }
 
-    public double calcularDiagonal(){
+    public double calcularDiagonal(boolean decimales){
         double a= Math.pow(altura,2);
         double b= Math.pow(base,2);
         double diagonal= Math.sqrt(a+b);
-        return diagonal;
+
+        double diagonalSinDecimales = (long) diagonal;
+
+        if (decimales){
+            return diagonal;
+        }else{
+            return diagonalSinDecimales;
+        }
+
     }
 
     @Override

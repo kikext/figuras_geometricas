@@ -10,7 +10,7 @@ public class Main {
         Rectangulo asus = new Rectangulo(4, 2.3, "rojo");
 
 
-        double diagonalStucom = stucom.calcularDiagonal();
+        double diagonalStucom = stucom.calcularDiagonal(false);
 
         System.out.println(diagonalStucom);
 
